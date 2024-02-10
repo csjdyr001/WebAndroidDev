@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebAndroidDev</title>
+  </head>
+  <body>	
+   <a href="https://github.com/csjdyr001/WebAndroidDev" style="text-decoration:none;">
+      <img src="https://img.shields.io/github/stars/csjdyr001/WebAndroidDev"/>
+      <img src="https://img.shields.io/github/forks/csjdyr001/WebAndroidDev"/>
+      <img src="https://img.shields.io/github/watchers/csjdyr001/WebAndroidDev"/>
+   </a>
+    <br><br>
+	<button onclick="load('newProject.html');">创建新项目</button>
+    <br><h6>作者懒得写CSS了，将就着看一下吧:)</h6>
+    <br><h6>用json写文件管理真的很难:(</h6>
+    <script>
+    function load(url){
+    window.location.href = url;
+    }
+  document.addEventListener('visibilitychange', function () {
+if (document.visibilityState == 'hidden') {
+    normal_title = document.title;
+    document.title = '点个star再走嘛QwQ';
+} else {
+document.title = normal_title
+};
+});
+    </script>
+  </body>
+</html>

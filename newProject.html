@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebAndroidDev-创建新项目</title>
+  </head>
+  <body>
+  <h3>WebAndroidDev-创建你的项目</h3>
+  <br><br>
+  项目类型:
+  <br>
+  <select style="width:100%;" id="id1">
+  <option>Android-Java</option>
+  <option disabled="">Android-Kotlin</option>
+  <br>
+  </select>
+  <br>
+  自定义js-jdk链接(建议自定义,默认为./WebAndroidDev/js-jdk/,默认的js-jdk不完整):
+  <br>
+  <input type="text" value="./WebAndroidDev/js-jdk/" id="JsJdk"/>
+  <br>
+  项目图标:
+  <br>
+  <img src="./ic_launcher.png" height="80" width="80" id="id2"/>
+  <br>
+  项目名称:
+  <br>
+  <input type="text" id="id3" value="Application"/>
+  <br>
+  项目包名:
+  <br>
+  <input type="text" id="id4" value="com.example.application"/>
+  <br><br>
+  <button style="width:100%;" onclick="create()">创建新项目</button>
+	<script>
+ function isNull(str) {
+    if(typeof str== null || str== "" || str== "undefined") {
+        return true;
+    } else {
+        return false;
+    }
+}
+  function load(url){
+    window.location.href = url;
+    }
+  function create(){
+  if((isNull(document.getElementById("id2").src) == false) && (isNull(document.getElementById("id3").value) == false) && (isNull(document.getElementById("id4").value) == false) && (isNull(document.getElementById("JsJdk").value) == false)){
+  load("WebAndroidDev.html?type=" + document.getElementById("id1").selectedIndex + "&icon=" + document.getElementById("id2").src + "&name=" + document.getElementById("id3").value + "&pm=" + document.getElementById("id4").value + "&jsjdk=" + document.getElementById("JsJdk").value);
+  }else{
+alert("值不能为空");
+}
+}
+document.addEventListener('visibilitychange', function () {
+if (document.visibilityState == 'hidden') {
+    normal_title = document.title;
+    document.title = '点个star再走嘛QwQ';
+} else {
+document.title = normal_title
+};
+});
+ </script>
+  </body>
+</html>

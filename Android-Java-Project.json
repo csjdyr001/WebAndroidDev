@@ -1,0 +1,133 @@
+[{
+		"name": "app",
+		"type": 1,
+		"files": [{
+				"name": "src",
+				"type": 1,
+				"files": [{
+					"name": "main",
+					"type": 1,
+					"files": [{
+							"name": "AndroidManifest.xml",
+							"type": 0,
+							"content": "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.example.application\">\n<application android:icon=\"@drawable/ic_launcher\" android:label=\"@string/app_name\" android:theme=\"@style/AppTheme\" android:resizeableActivity=\"true\">\n<activity android:name=\".MainActivity\" android:label=\"@string/app_name\" android:exported=\"true\">\n<intent-filter>\n<action android:name=\"android.intent.action.MAIN\"/>\n<category android:name=\"android.intent.category.LAUNCHER\"/>\n</intent-filter>\n</activity>\n<meta-data android:name=\"android.max_aspect\" android:value=\"4.0\"/>\n</application>\n</manifest>"
+						},
+						{
+							"name": "res",
+							"type": 1,
+							"files": [{
+									"name": "drawable",
+									"type": 1,
+									"files": [{
+										"name": "ic_launcher.png",
+										"type": 2,
+										"content": "./ic_launcher.png"
+									}]
+								},
+								{
+									"name": "layout",
+									"type": 1,
+									"files": [{
+										"name": "activity_main.xml",
+										"type": 0,
+										"content": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:app=\"http://schemas.android.com/apk/res-auto\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\"> </LinearLayout>"
+									}]
+								},
+								{
+									"name": "values",
+									"type": 1,
+									"files": [{
+											"name": "colors.xml",
+											"type": 2,
+											"content": "<resources>\n<color name=\"colorPrimary\">#009688</color>\n<color name=\"colorPrimaryDark\">#00796B</color>\n<color name=\"colorAccent\">#FF9800</color>\n</resources>"
+										},
+										{
+											"name": "strings.xml",
+											"type": 2,
+											"content": ""
+										},
+										{
+											"name": "styles.xml",
+											"type": 2,
+											"content": ""
+										}
+									]
+								},
+								{
+									"name": "values-v21",
+									"type": 1,
+									"files": [{
+										"name": "styles.xml",
+										"type": 2,
+										"content": ""
+									}]
+								}
+							]
+						},
+						{
+							"name": "java",
+							"type": 1,
+							"files": [{
+								"name": "com",
+								"type": 1,
+								"files": [{
+									"name": "example",
+									"type": 1,
+									"files": [{
+										"name": "application",
+										"type": 1,
+										"files": [{
+											"name": "MainActivity.java",
+											"type": 0,
+											"content": "package com.example.application;\nimport android.app.Activity;\nimport android.os.Bundle;\npublic class MainActivity extends Activity {\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_main);\n    }\n}"
+										}]
+									}]
+								}]
+							}]
+						}
+					]
+				}]
+			},
+			{
+				"name": "build.gradle",
+				"type": 2,
+				"content": ""
+			},
+			{
+				"name": "proguard-rules.pro",
+				"type": 2,
+				"content": ""
+			}
+		]
+	},
+	{
+		"name": "build.gradle",
+		"type": 2,
+		"content": ""
+	},
+	{
+		"name": "gradle.properties",
+		"type": 2,
+		"content": ""
+	},
+	{
+		"name": "gradlew",
+		"type": 2,
+		"content": ""
+	},
+	{
+		"name": "gradlew.bat",
+		"type": 2,
+		"content": ""
+	},
+	{
+		"name": "settings.gradle",
+		"type": 2,
+		"content": ""
+	},
+	{
+		"name": "local.properties",
+		"type": 2,
+		"content": ""
+	}
+]
